@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:paddingTop="50dp"
+    tools:context="sg.edu.rp.webservices.firebasetodoapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMessageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Title: "/>
+
+    <TextView
+        android:id="@+id/textViewMessageDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Date: " />
+
+    <TextView
+        android:id="@+id/textViewMessageDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="NumOfDays: " />
+
+    <TextView
+        android:id="@+id/textViewMessageComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Completed? " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTextMessageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTextMessageDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NumOfDays"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editTextMessageDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed?"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMessageComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item" />
+
+</LinearLayout>
+
